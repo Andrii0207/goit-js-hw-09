@@ -6,6 +6,7 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 let isActive = false;
+let timerId = null;
 
 startBtn.addEventListener('click', onClickStartBtn);
 stopBtn.addEventListener('click', onClickStopBtn);
