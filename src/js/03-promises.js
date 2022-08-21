@@ -18,7 +18,7 @@ function createPromise(position, delay) {
 }
 
 function countPromises(count, delay, step) {
-  for (i = 1; i <= count; i += 1) {
+  for (let i = 1; i <= count; i += 1) {
     let time = delay + step * (i - 1);
     createPromise(i, time)
       .then(({ position, delay }) => {
