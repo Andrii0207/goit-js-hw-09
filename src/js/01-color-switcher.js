@@ -17,10 +17,11 @@ function onClickStartBtn() {
   }
   timerId = setInterval(() => {
     isActive = true;
-    console.log('click to button START', +Date.now());
+    console.log('click to button START,', `color: ${getRandomHexColor()}`);
     getRandomHexColor();
     body.style.backgroundColor = getRandomHexColor();
   }, 1000);
+  0207;
 }
 
 function onClickStopBtn() {

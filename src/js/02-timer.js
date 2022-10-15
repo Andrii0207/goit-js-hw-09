@@ -24,8 +24,9 @@ const options = {
     pickedDate = selectedDates[0];
     let dateNow = options.defaultDate;
 
-    if (pickedDate < dateNow) {
+    if (pickedDate <= dateNow) {
       Notiflix.Report.warning('Please choose a date in the future');
+      return;
     }
     refs.startBtn.removeAttribute('disabled');
   },
